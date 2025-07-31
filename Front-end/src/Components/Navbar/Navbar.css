@@ -1,0 +1,100 @@
+.Navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar .logo{
+    width: 150px;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: rgb(105, 95, 109);
+    font-size: 18px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.Navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: rgb(10, 6, 12);
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.Navbar button:hover{
+    background-color: tomato;
+}
+
+.Navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+
+.Navbar li{
+    cursor: pointer;
+}
+
+.navbar-basket{
+    position: relative;
+}
+
+.navbar-basket .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+@media(max-width:1050px){
+    .Navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 20px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+        
+    }
+}
+
+@media(max-width:900px){
+    .Navbar .logo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 20px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+        font-size: 15px;
+    }
+}
